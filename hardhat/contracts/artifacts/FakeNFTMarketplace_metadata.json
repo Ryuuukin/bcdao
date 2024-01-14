@@ -1,0 +1,134 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "available",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "purchase",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "tokens",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"available(uint256)": {
+					"details": "available() checks whether the given tokenId has already been sold or not",
+					"params": {
+						"_tokenId": "- the tokenId to check for"
+					}
+				},
+				"getPrice()": {
+					"details": "getPrice() returns the price of one NFT"
+				},
+				"purchase(uint256)": {
+					"details": "purchase() accepts ETH and marks the owner of the given tokenId as the caller address",
+					"params": {
+						"_tokenId": "- the fake NFT token Id to purchase"
+					}
+				}
+			},
+			"stateVariables": {
+				"nftPrice": {
+					"details": "Set the purchase price for each Fake NFT"
+				},
+				"tokens": {
+					"details": "Maintain a mapping of Fake TokenID to Owner addresses"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"hardhat/contracts/FakeNFTMarketplace.sol": "FakeNFTMarketplace"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"hardhat/contracts/FakeNFTMarketplace.sol": {
+			"keccak256": "0xe53f50f1b85bc00a896636ee6500c36e6777ac322e796b4433963d5f1482a66a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://30f2ba67175ad0082a5f3ed54719f3ee03dc8ea1001c3ef5b199d78f69a0ed29",
+				"dweb:/ipfs/QmWamjkV89aS2RPeBKEvokK9fvhWEcZqaoaLZXADraAke5"
+			]
+		}
+	},
+	"version": 1
+}
